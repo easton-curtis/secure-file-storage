@@ -6,9 +6,9 @@ This program uses the sha256 hashing algorithm.
 
 ## Usage
 
-sfs . --encrypt /path/to/file  
-sfs . --decrypt /path/to/file  
-sfs . --help /path/to/file
+sfs --encrypt /path/to/file  
+sfs --decrypt /path/to/file  
+sfs --help /path/to/file
 
 ## Installation
 
