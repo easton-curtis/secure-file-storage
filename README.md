@@ -8,7 +8,7 @@ This program uses the sha256 hashing algorithm.
 
 sfs --encrypt /path/to/file  
 sfs --decrypt /path/to/file  
-sfs --help /path/to/file
+sfs --help 
 
 ## Installation
 
