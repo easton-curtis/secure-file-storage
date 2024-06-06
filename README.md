@@ -19,11 +19,17 @@ sfs . --help /path/to/file
 1. Click on Windows Start button
 2. Type "environment variable"
 3. Click on "Edit the system environment variables"
+
 ![](./images/env-variable.png.png)
+
 4. Click on "Environment Variables..."
+
 ![](./images/env-variable-2.png.png)
+
 5. Click on the Path variable 
+
 ![](./images/path-var.png.png)
+
 6. Click on "Edit..."
 6. Take note of an existing path inside of this variable
 7. Navigate to that path and add the sfs.exe file to it. 
@@ -34,14 +40,22 @@ sfs . --help /path/to/file
 1. Click on Windows Start button
 2. Type "environment variable"
 3. Click on "Edit the system environment variables"
+
 ![](./images/env-variable.png.png)
+
 4. Click on "Environment Variables..."
+
 ![](./images/env-variable-2.png.png)
+
 5. Click on the Path variable 
+
 ![](./images/path-var.png.png)
+
 6. Click on "Edit..."
 7. Click on "New"
+
 ![](./images/path-var-2.png.png)
+
 8. Add path to new Directory
 9. Click ok on all open windows
 10. Create new directory in same location as path inputed in the Path Environment Variable
