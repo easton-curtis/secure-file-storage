@@ -43,11 +43,14 @@ func help() { //prints out help page
 	fmt.Println("Usage:")
 	fmt.Println("\tsfs --encrypt /path/to/file")
 	fmt.Println("\tsfs --decrypt /path/to/file")
+	fmt.Println("\tsfs --encrypt /path/to/file --no-pass")
+	fmt.Println("\tsfs --decrypt /path/to/file --no-pass")
 	fmt.Println("\tsfs --help")
 	fmt.Println()
 	fmt.Println("Commands:")
-	fmt.Println("\t--encrypt\t encrypts raw data of file provided.")
-	fmt.Println("\t--decrypt\t decrypts encrypted data of file provided.")
+	fmt.Println("\t--encrypt\t encrypts raw data of file provided")
+	fmt.Println("\t--decrypt\t decrypts encrypted data of file provided")
+	fmt.Println("\t--no-pass\t bypasses need for password")
 	fmt.Println("\t--help\t         displays help page")
 }
 
@@ -66,7 +69,17 @@ func preliminaryProcessing() (string, []byte) {
 		panic("File Not Found.")
 	}
 
-	password := getPassword()
+	var password []byte
+
+	if len(os.Args) > 3 && os.Args[3] == "--no-pass" {
+		password = make([]byte, 0)
+	} else {
+		password = getPassword()
+	}
+
+	if os.Args[3] == "--no-pass" {
+		password = make([]byte, 0)
+	}
 
 	return filePath, password
 }

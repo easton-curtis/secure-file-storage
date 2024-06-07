@@ -2,12 +2,12 @@
 
 This is a simple program that allows the user to easily encrypt and decrypt raw data of a file.
 
-This program uses the sha256 hashing algorithm.
-
 ## Usage
 
 sfs --encrypt /path/to/file  
 sfs --decrypt /path/to/file  
+sfs --encrypt /path/to/file --no-pass  
+sfs --decrypt /path/to/file --no-pass  
 sfs --help 
 
 ## Installation
