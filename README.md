@@ -15,7 +15,7 @@ sfs --help
 1. Download sfs.exe
 2. Add sfs.exe to Path Environment Variable
 
-### Adding to Existing Directory
+### Adding sfs.exe to Existing Directory in Path
 1. Click on Windows Start button
 2. Type "environment variable"
 3. Click on "Edit the system environment variables"
@@ -36,7 +36,7 @@ sfs --help
 8. Click "Ok" on all open windows
 9. Restart your command prompt
 
-### Adding to New Directory
+### Adding sfs.exe to New Directory in Path
 1. Click on Windows Start button
 2. Type "environment variable"
 3. Click on "Edit the system environment variables"
