@@ -1,6 +1,6 @@
 # Secure File Storage
 
-This is a simple program that allows the user to easily encrypt and decrypt raw data of a file.
+This is a simple program that allows the user to easily encrypt and decrypt raw data of a file and runs in the command line.
 
 ## Usage
 
