@@ -77,10 +77,6 @@ func preliminaryProcessing() (string, []byte) {
 		password = getPassword()
 	}
 
-	if os.Args[3] == "--no-pass" {
-		password = make([]byte, 0)
-	}
-
 	return filePath, password
 }
 
