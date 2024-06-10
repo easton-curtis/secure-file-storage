@@ -98,7 +98,7 @@ func encrypt() {
 	filePath, password := preliminaryProcessing()
 	fmt.Println("\nEncryption has begun...")
 
-	//create hash of password
+	//create representation of password
 	key := password
 
 	//get raw data of file
@@ -110,7 +110,7 @@ func encrypt() {
 		panic(err.Error())
 	}
 
-	//get full key
+	//create full key
 	derivedKey := pbkdf2.Key(key, salt, 4096, 32, sha256.New)
 
 	//create block for cipher
@@ -126,6 +126,8 @@ func encrypt() {
 
 	//create ciphertext
 	ciphertext := aesgcm.Seal(nil, salt, rawData, nil)
+
+	//append salt to end of ciphertext
 	ciphertext = append(ciphertext, salt...)
 
 	//copy ciphertext over original file's raw data
@@ -147,6 +149,7 @@ func decrypt() {
 	filePath, password := preliminaryProcessing()
 	fmt.Println("\nDecryption has begun...")
 
+	//create representation of password
 	key := password
 
 	//get raw data of file
